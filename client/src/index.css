@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 selection:bg-emerald-100 selection:text-emerald-900 h-full antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+@layer components {
+  /* Academic Card Elements */
+  .academic-card {
+    @apply bg-white border border-slate-200/80 rounded-lg shadow-sm;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+
+  .academic-card:hover {
+    @apply border-slate-300 shadow-md;
+  }
+
+  /* Academic Input Elements */
+  .academic-input {
+    @apply w-full px-3.5 py-2 bg-white border border-slate-300 rounded-md text-slate-900 text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-600 transition-all;
+  }
+
+  /* Buttons */
+  .academic-btn-primary {
+    @apply px-4 py-2 bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white text-sm font-semibold rounded-md shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500/20 disabled:opacity-50 disabled:pointer-events-none;
+  }
+
+  .academic-btn-secondary {
+    @apply px-4 py-2 bg-slate-100 hover:bg-slate-200 active:bg-slate-300 text-slate-700 border border-slate-300/80 text-sm font-semibold rounded-md shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-slate-500/10 disabled:opacity-50 disabled:pointer-events-none;
+  }
+
+  .academic-btn-danger {
+    @apply px-4 py-2 bg-red-600 hover:bg-red-700 active:bg-red-800 text-white text-sm font-semibold rounded-md shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-red-500/20 disabled:opacity-50 disabled:pointer-events-none;
+  }
+
+  /* Structured Academic Tables */
+  .academic-table-container {
+    @apply overflow-hidden border border-slate-200 rounded-lg bg-white shadow-sm;
+  }
+
+  .academic-table {
+    @apply w-full border-collapse text-left text-sm text-slate-700;
+  }
+
+  .academic-table thead {
+    @apply bg-slate-50 border-b border-slate-200 text-slate-700 font-semibold text-xs uppercase tracking-wider;
+  }
+
+  .academic-table th {
+    @apply py-3 px-4;
+  }
+
+  .academic-table tbody {
+    @apply divide-y divide-slate-100;
+  }
+
+  .academic-table td {
+    @apply py-3.5 px-4 text-slate-800 align-middle;
+  }
+
+  .academic-table tr {
+    @apply transition-colors hover:bg-slate-50/60;
+  }
+}
+
+/* Scrollbar adjustment for professional platforms */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
