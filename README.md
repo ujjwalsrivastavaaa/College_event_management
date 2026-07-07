@@ -2,6 +2,8 @@
 
 A comprehensive, full-stack application for managing college clubs, events, and student attendance. Built with the MERN stack (MongoDB, Express.js, React, Node.js) and styled with Tailwind CSS.
 
+## **Website Link** - https://college-event-management-n8xh-7tff73vio-ujjwal44.vercel.app/login
+
 ## 🌟 Key Features
 
 ### 1. Role-Based Access Control
